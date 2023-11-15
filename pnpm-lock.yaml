@@ -21,6 +21,12 @@ importers:
       '@commitlint/config-conventional':
         specifier: ^18.4.0
         version: 18.4.0
+      '@drow-ui/components':
+        specifier: workspace:^
+        version: link:packages/components
+      '@drow-ui/utils':
+        specifier: workspace:^
+        version: link:packages/utils
       '@esbuild-kit/cjs-loader':
         specifier: ^2.4.4
         version: 2.4.4
@@ -42,7 +48,19 @@ importers:
 
   packages/button: {}
 
+  packages/components:
+    dependencies:
+      lit:
+        specifier: ^3.0.0
+        version: 3.0.2
+
   packages/divider: {}
+
+  packages/utils:
+    dependencies:
+      lit:
+        specifier: ^3.0.0
+        version: 3.0.2
 
 packages:
 

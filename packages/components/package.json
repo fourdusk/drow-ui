@@ -1,0 +1,11 @@
+{
+  "name": "@drow-ui/components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "keywords": [],
+  "author": "",
+  "peerDependencies": {
+    "lit": "^3.0.0"
+  }
+}
