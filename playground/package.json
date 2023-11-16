@@ -1,19 +1,20 @@
 {
-  "private": true,
-  "name": "drow-ui",
+  "name": "@drow-ui/playground",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
+  "keywords": [],
+  "author": "",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "engines": {
     "node": ">=16",
     "pnpm": ">=8"
+  },
+  "devDependencies": {
+    "vite": "^4.5.0"
   }
 }

@@ -5,7 +5,8 @@
   "main": "index.ts",
   "keywords": [],
   "author": "",
-  "peerDependencies": {
-    "lit": "^3.0.0"
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=8"
   }
 }

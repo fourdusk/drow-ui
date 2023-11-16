@@ -1,15 +1,14 @@
+import { PREFIX } from '@drow-ui/constants'
 import { LitElement, html } from 'lit'
-import { customElement } from 'lit/decorators.js'
 
-@customElement('d-button')
-class DButton extends LitElement {
+export class Button extends LitElement {
+  static readonly tag = `${PREFIX}button`
+
   render() {
-    return html`<button><slot></slot></button>`
-  }
-}
-
-declare global {
-  interface HTMLElementTagNameMap {
-    'd-button': DButton
+    return html`
+    <button type="button">
+      <slot></slot>
+    </button>
+    `
   }
 }

@@ -1,8 +1,9 @@
+import { PREFIX } from '@drow-ui/constants'
 import { LitElement, css, html } from 'lit'
-import { customElement } from 'lit/decorators.js'
 
-@customElement('d-divider')
-class DDivider extends LitElement {
+export class Divider extends LitElement {
+  static readonly tag = `${PREFIX}divider`
+
   static styles = css`
     div {
       display: flex;
@@ -14,11 +15,5 @@ class DDivider extends LitElement {
   `
   render() {
     return html`<div></div>`
-  }
-}
-
-declare global {
-  interface HTMLElementTagNameMap {
-    'd-divider': DDivider
   }
 }
