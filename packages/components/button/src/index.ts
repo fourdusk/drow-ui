@@ -1,12 +1,15 @@
-import { PREFIX } from '@drow-ui/constants'
-import { LitElement, html } from 'lit'
+import { Base } from '@drow-ui/components/base'
+import { html, unsafeCSS } from 'lit'
+import style from '../style/index.less?inline'
 
-export class Button extends LitElement {
-  static readonly tag = `${PREFIX}button`
+export class Button extends Base {
+  static tag = `${Button.prefix}button`
+
+  static styles = unsafeCSS(style)
 
   render() {
     return html`
-    <button type="button">
+    <button type="button" class=${Button.tag}>
       <slot></slot>
     </button>
     `
