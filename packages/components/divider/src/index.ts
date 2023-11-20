@@ -1,7 +1,7 @@
 import { Base } from '@drow-ui/components/base'
 import { css, html } from 'lit'
 export class Divider extends Base {
-  static tag = `${Divider.prefix}divider`
+  static __tag__ = `${Base.__prefix__}-divider`
 
   static styles = css`
     div {

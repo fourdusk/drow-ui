@@ -1,5 +1,5 @@
 const DEFAULT_CONFIG = {
-  prefix: 'd-'
+  prefix: 'd'
 }
 
 interface Config {

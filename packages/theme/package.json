@@ -1,0 +1,12 @@
+{
+  "name": "@drow-ui/theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.css",
+  "keywords": [],
+  "author": "",
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=8"
+  }
+}

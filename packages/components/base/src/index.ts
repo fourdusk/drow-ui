@@ -8,7 +8,7 @@ type Constructor<T = Record<PropertyKey, PropertyValues>> = new (
 
 const Mixin = <T extends Constructor<LitElement>>(superClass: T) => {
   class subClass extends superClass {
-    static prefix = GLOBAL_CONFIG_PROVIDER().prefix
+    static __prefix__ = GLOBAL_CONFIG_PROVIDER().prefix
 
     render() {}
   }

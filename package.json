@@ -25,6 +25,7 @@
   "dependencies": {
     "@drow-ui/components": "workspace:^",
     "@drow-ui/constants": "workspace:^",
+    "@drow-ui/theme": "workspace:^",
     "@drow-ui/utils": "workspace:^"
   },
   "devDependencies": {

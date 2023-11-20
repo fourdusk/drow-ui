@@ -14,6 +14,9 @@ importers:
       '@drow-ui/constants':
         specifier: workspace:^
         version: link:packages/constants
+      '@drow-ui/theme':
+        specifier: workspace:^
+        version: link:packages/theme
       '@drow-ui/utils':
         specifier: workspace:^
         version: link:packages/utils
@@ -49,6 +52,8 @@ importers:
   packages/components: {}
 
   packages/constants: {}
+
+  packages/theme: {}
 
   packages/utils: {}
 

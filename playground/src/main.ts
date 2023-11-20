@@ -1,3 +1,5 @@
+import '@drow-ui/theme/share/index.less'
+
 const start = async () => {
   const body = document.querySelector('body')
   const coms = import.meta.glob('./components/*.ts', {

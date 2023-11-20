@@ -3,15 +3,17 @@ import { html, unsafeCSS } from 'lit'
 import style from '../style/index.less?inline'
 
 export class Button extends Base {
-  static tag = `${Button.prefix}button`
+  static __tag__ = `${Base.__prefix__}-button`
 
   static styles = unsafeCSS(style)
 
   render() {
     return html`
-    <button type="button" class=${Button.tag}>
-      <slot></slot>
-    </button>
+      <button type="button" class=${Button.__tag__}>
+        <slot name="prefix"></slot>
+        <slot></slot>
+        <slot name="suffix"></slot>
+      </button>
     `
   }
 }
